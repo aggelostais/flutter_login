@@ -1,16 +1,16 @@
 part of 'authentication_bloc.dart';
 
-// The AuthenticationEvent is an abstract class that represents the different events that can occur in the authentication process.
+// AuthenticationEvent: Abstract class that represents the different events that can occur in the authentication process.
 sealed class AuthenticationEvent {
   const AuthenticationEvent();
 }
 
-// The AuthenticationStatusChanged event is dispatched when the user's authentication status changes.
+// Represents a change in user authentication status.
 final class _AuthenticationStatusChanged extends AuthenticationEvent {
-  const _AuthenticationStatusChanged(this.status);
+  const _AuthenticationStatusChanged(this.status); // new AuthenticationStatus.
 
   final AuthenticationStatus status;
 }
 
-// The AuthenticationLogoutRequested event is dispatched when the user requests to log out.
+// Represents a user logout request.
 final class AuthenticationLogoutRequested extends AuthenticationEvent {}

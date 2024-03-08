@@ -5,6 +5,7 @@ import 'package:uuid/uuid.dart';
 
 // The UserRepository class is a simple repository that provides access to a user object.
 // This is where we would query the current user from the backend
+// UserRepository: Manages user data and provides access to the current user.
 class UserRepository {
   User? _user; // The _user property is a private variable that holds the current user.
 
