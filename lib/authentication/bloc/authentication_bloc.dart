@@ -8,8 +8,9 @@ import 'package:user_repository/user_repository.dart';
 part 'authentication_event.dart';
 part 'authentication_state.dart';
 
-// The AuthenticationBloc is a BLoC that manages the user's authentication status.
-//Listen for AuthenticationEvents and emit new AuthenticationStates in response.
+// The AuthenticationBloc is a BLoC that manages the user's authentication status,
+// reacting to changes in the Authentication state.
+// Listen for AuthenticationEvents and emit new AuthenticationStates in response.
 class AuthenticationBloc
     extends Bloc<AuthenticationEvent, AuthenticationState> {
   AuthenticationBloc({
